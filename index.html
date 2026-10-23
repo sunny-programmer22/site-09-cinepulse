@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinePulse - Movie Reviews, Trailers & Streaming Guide</title>
+  <meta name="description" content="Explore box office rankings, 4K movie trailers, verified critic reviews, and streaming availability across Netflix, Prime Video, Max, and Disney+.">
+  
+  <!-- Favicon Reel -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- HilltopAds Integration Script -->
+  <script src="ads-config.js" defer></script>
+</head>
+<body>
+
+  <!-- ==============================================================================
+       HEADER & NAVIGATION
+       ============================================================================== -->
+  <header class="cine-header" id="cine-header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="CinePulse Home">
+        <div class="logo-reel">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+            <line x1="12" y1="2" x2="12" y2="4"></line>
+            <line x1="12" y1="20" x2="12" y2="22"></line>
+            <line x1="2" y1="12" x2="4" y2="12"></line>
+            <line x1="20" y1="12" x2="22" y2="12"></line>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">CINE<span>PULSE</span></span>
+          <span class="logo-tagline">Trailers &bull; Reviews &bull; Guide</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Spotlight</a></li>
+          <li><a href="#trailers" class="nav-link">Trailers <span class="nav-badge-pill">4K VAST</span></a></li>
+          <li><a href="#box-office" class="nav-link">Box Office</a></li>
+          <li><a href="#discovery" class="nav-link">Movies</a></li>
+          <li><a href="#reviews" class="nav-link">Critic Reviews</a></li>
+          <li><a href="#streaming" class="nav-link">Where to Watch</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search, Watchlist & Ad Config Controls -->
+      <div class="nav-actions">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="movie-search-input" class="search-input" placeholder="Search movies, actors..." aria-label="Search movies">
+        </div>
+
+        <button class="btn-watchlist-toggle" id="watchlist-open-btn" title="Open Watchlist">
+          ⭐ Watchlist <span class="watchlist-count" id="watchlist-count">3</span>
+        </button>
+
+        <button class="btn-ads-badge" onclick="openAdsConfigModal()" title="View & Configure HilltopAds Zones">
+          <span class="pulse-dot"></span> HilltopAds <span style="font-size: 10px; opacity: 0.8;">(6 Zones)</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==============================================================================
+       ZONE 3: TOP LEADERBOARD BANNER (728x90)
+       Visual Placement Slot
+       ============================================================================== -->
+  <aside class="ad-slot-header-wrapper" aria-label="Leaderboard Advertisement">
+    <div class="container" style="display: flex; justify-content: center;">
+      <div id="ad-zone-header-728x90" class="ad-container-leaderboard">
+        <!-- Rendered dynamically by ads-config.js (HilltopAds Zone 3) -->
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==============================================================================
+         HERO SPOTLIGHT SECTION
+         ============================================================================== -->
+    <section class="hero-spotlight" id="hero">
+      <div class="hero-backdrop-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill-tag">
+            <span class="pulse-dot"></span> NOW PLAYING IN IMAX 70MM
+          </div>
+          <h1 class="hero-title">Dune: Part Two</h1>
+          <div class="hero-meta-row">
+            <div class="score-badge-imdb" title="IMDb Score">
+              ★ 8.6 <span>/ 10</span>
+            </div>
+            <div class="score-badge-rt" title="Rotten Tomatoes Score">
+              🍅 92% <span>Verified</span>
+            </div>
+            <span class="badge-format">PG-13</span>
+            <span class="badge-format">2h 46m</span>
+            <span class="badge-format">Sci-Fi / Adventure</span>
+            <span class="badge-format" style="border-color: var(--gold); color: var(--gold);">Dolby Atmos &bull; 4K UHD</span>
+          </div>
+          <p class="hero-synopsis">
+            Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, he endeavors to prevent a terrible future only he can foresee.
+          </p>
+          <div class="hero-actions">
+            <!-- Zone 5: Direct Link attached to 'Watch Trailer in 4K' -->
+            <button class="btn-primary-cine btn-watch-trailer-4k direct-link-trigger" data-action="watch-trailer" onclick="scrollToPlayerAndPlay('dune2')">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Watch Trailer in 4K
+            </button>
+
+            <!-- Zone 5: Direct Link attached to 'Check Cinema Showtimes' -->
+            <button class="btn-secondary-cine btn-check-showtimes direct-link-trigger" data-action="check-showtimes" onclick="openShowtimesModal('Dune: Part Two')">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              Check Cinema Showtimes
+            </button>
+
+            <button class="btn-secondary-cine" onclick="addToWatchlist('Dune: Part Two', 'Sci-Fi / Adventure', '8.6')">
+              ⭐ Add to Watchlist
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-poster-wrap">
+          <div class="hero-poster-card">
+            <span class="hero-poster-badge">#1 Global Box Office</span>
+            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80" alt="Dune: Part Two Cinematic Poster" class="hero-poster-img">
+            <div class="hero-poster-overlay">
+              <div style="display: flex; gap: 8px;">
+                <span class="badge-format">IMAX 70MM</span>
+                <span class="badge-format">Warner Bros.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         LATEST MOVIE TRAILERS & HTML5 VIDEO PLAYER (ZONE 6 VAST INTEGRATION)
+         ============================================================================== -->
+    <section class="trailers-section" id="trailers">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-pretitle">Premiere Screen Room</span>
+            <h2 class="section-title">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Latest 4K Trailers &amp; Teasers
+            </h2>
+          </div>
+          <p class="section-subtitle">Powered by HTML5 Cinema Player with HilltopAds Zone 6 VAST Integration</p>
+        </div>
+
+        <div class="trailer-player-card">
+          <div class="player-main-layout">
+            <!-- Video Stage with VAST Ad Overlay -->
+            <div class="player-stage" id="player-stage">
+              <!-- Big Play Trigger -->
+              <button class="trailer-play-trigger" id="trailer-play-trigger" aria-label="Play Trailer">▶</button>
+
+              <!-- HTML5 Cinema Video Element -->
+              <video id="cinepulse-trailer-player" class="cine-video-element" poster="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80" preload="metadata" controls>
+                <source id="video-source" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4">
+                Your browser does not support HTML5 video streaming.
+              </video>
+
+              <!-- ZONE 6: VAST VIDEO AD OVERLAY (PRE-ROLL / MID-ROLL) -->
+              <div class="vast-ad-overlay" id="vast-ad-overlay">
+                <div class="vast-overlay-top">
+                  <div class="vast-sponsor-badge">
+                    <span class="vast-badge-dot"></span>
+                    <span class="vast-badge-title">SPONSORED COMMERCIAL &bull; VAST TAG</span>
+                  </div>
+                  <div class="vast-timer-box">
+                    Ad Playing: <span class="vast-timer-digits">0:15</span>
+                  </div>
+                </div>
+
+                <div class="vast-overlay-center">
+                  <span style="font-size: 11px; font-weight: 800; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase;">HilltopAds Zone 6 &bull; Linear Video Ad</span>
+                  <h3 class="vast-commercial-title">MaxStream Ultra 4K Cinema Pass</h3>
+                  <p class="vast-commercial-desc">Stream over 10,000 Hollywood blockbuster releases in uncompressed 4K HDR10+ with zero buffering on all devices.</p>
+                  <!-- Zone 5 SmartLink integration inside VAST -->
+                  <button class="vast-sponsor-btn direct-link-trigger" data-action="vast-sponsor">
+                    Visit Sponsor / Claim Pass &rarr;
+                  </button>
+                </div>
+
+                <div class="vast-overlay-bottom">
+                  <div class="vast-progress-bar">
+                    <div class="vast-bar-fill"></div>
+                  </div>
+                  <div class="vast-bottom-controls">
+                    <span class="vast-ad-notice">Ad will automatically finish or you may skip when ready.</span>
+                    <button class="vast-skip-button" disabled>Skip Ad in 5s</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Playlist Selector Sidebar -->
+            <div class="player-playlist-sidebar">
+              <div class="playlist-header">
+                <span class="playlist-title">Trailer Playlist</span>
+                <span class="playlist-count">5 Trailers</span>
+              </div>
+              <div class="playlist-items-scroll" id="playlist-container">
+                <!-- Trailer 1 -->
+                <div class="playlist-item active" onclick="switchTrailer('dune2', this)">
+                  <div class="playlist-thumb-box">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=200&q=75" alt="Dune Part Two Trailer Thumbnail">
+                    <span class="playlist-duration">2:45</span>
+                  </div>
+                  <div class="playlist-details">
+                    <h5 class="playlist-movie-name">Dune: Part Two</h5>
+                    <span class="playlist-sub">Official 4K IMAX Trailer</span>
+                    <span class="playlist-tag">Sci-Fi Epic</span>
+                  </div>
+                </div>
+
+                <!-- Trailer 2 -->
+                <div class="playlist-item" onclick="switchTrailer('gladiator2', this)">
+                  <div class="playlist-thumb-box">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=200&q=75" alt="Gladiator II Trailer Thumbnail">
+                    <span class="playlist-duration">3:12</span>
+                  </div>
+                  <div class="playlist-details">
+                    <h5 class="playlist-movie-name">Gladiator II</h5>
+                    <span class="playlist-sub">Colosseum Teaser 4K</span>
+                    <span class="playlist-tag">Action / Epic</span>
+                  </div>
+                </div>
+
+                <!-- Trailer 3 -->
+                <div class="playlist-item" onclick="switchTrailer('deadpool', this)">
+                  <div class="playlist-thumb-box">
+                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=200&q=75" alt="Deadpool and Wolverine Thumbnail">
+                    <span class="playlist-duration">2:38</span>
+                  </div>
+                  <div class="playlist-details">
+                    <h5 class="playlist-movie-name">Deadpool &amp; Wolverine</h5>
+                    <span class="playlist-sub">Red Band Trailer</span>
+                    <span class="playlist-tag">Action / Comedy</span>
+                  </div>
+                </div>
+
+                <!-- Trailer 4 -->
+                <div class="playlist-item" onclick="switchTrailer('interstellar', this)">
+                  <div class="playlist-thumb-box">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=200&q=75" alt="Interstellar 10th Anniversary Thumbnail">
+                    <span class="playlist-duration">2:55</span>
+                  </div>
+                  <div class="playlist-details">
+                    <h5 class="playlist-movie-name">Interstellar (10th Anniv.)</h5>
+                    <span class="playlist-sub">70mm IMAX Re-Release</span>
+                    <span class="playlist-tag">Sci-Fi Classic</span>
+                  </div>
+                </div>
+
+                <!-- Trailer 5 -->
+                <div class="playlist-item" onclick="switchTrailer('alien', this)">
+                  <div class="playlist-thumb-box">
+                    <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=200&q=75" alt="Alien Romulus Thumbnail">
+                    <span class="playlist-duration">2:20</span>
+                  </div>
+                  <div class="playlist-details">
+                    <h5 class="playlist-movie-name">Alien: Romulus</h5>
+                    <span class="playlist-sub">Final Nightmare Trailer</span>
+                    <span class="playlist-tag">Sci-Fi / Horror</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Player Bottom Bar -->
+          <div class="player-info-bar">
+            <div class="now-playing-info">
+              <span class="now-playing-label">Now Streaming Trailer</span>
+              <h4 class="now-playing-title" id="player-active-title">Dune: Part Two (Official 4K Trailer)</h4>
+              <div class="now-playing-meta">
+                <span>Sound: Dolby Atmos 7.1</span>
+                <span>Resolution: 3840x2160 UHD</span>
+                <span>Aspect: 1.90:1 IMAX Expanded</span>
+              </div>
+            </div>
+            <div class="player-cta-actions">
+              <button class="btn-player-4k btn-watch-trailer-4k direct-link-trigger" data-action="watch-trailer-4k">
+                ⚡ Watch Trailer in 4K
+              </button>
+              <button class="btn-player-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Dune: Part Two')">
+                🎟 Check Cinema Showtimes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         TRENDING BOX OFFICE RANKINGS
+         ============================================================================== -->
+    <section class="box-office-section" id="box-office">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-pretitle">Domestic &amp; Worldwide Financials</span>
+            <h2 class="section-title">
+              <span style="color: var(--gold);">💰</span>
+              Trending Box Office Rankings
+            </h2>
+          </div>
+          <p class="section-subtitle">Weekly box office gross, theater counts, and ticketing showtimes</p>
+        </div>
+
+        <div class="box-office-table-wrapper">
+          <table class="box-office-table" aria-label="Box Office Top 10">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Movie Title &amp; Distributor</th>
+                <th>Weekend Gross</th>
+                <th>Total Gross</th>
+                <th>Theaters</th>
+                <th>Weeks</th>
+                <th>Showtimes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr>
+                <td class="rank-cell top-3">01</td>
+                <td>
+                  <div class="movie-title-cell">
+                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=100&q=75" alt="Dune Part Two" class="bo-poster-mini">
+                    <div class="bo-info">
+                      <h4>Dune: Part Two</h4>
+                      <span>Warner Bros. Pictures &bull; PG-13</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="gross-cell">$82,505,000</td>
+                <td>$714,444,000</td>
+                <td>4,071</td>
+                <td><span class="trend-badge trend-up">🔺 Week 4</span></td>
+                <td>
+                  <button class="bo-action-btn btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Dune: Part Two')">
+                    Tickets &amp; Times
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Row 2 -->
+              <tr>
+                <td class="rank-cell top-3">02</td>
+                <td>
+                  <div class="movie-title-cell">
+                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=100&q=75" alt="Deadpool & Wolverine" class="bo-poster-mini">
+                    <div class="bo-info">
+                      <h4>Deadpool &amp; Wolverine</h4>
+                      <span>Marvel Studios / Disney &bull; R</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="gross-cell">$63,800,000</td>
+                <td>$1,337,800,000</td>
+                <td>4,210</td>
+                <td><span class="trend-badge trend-up">🔺 Week 6</span></td>
+                <td>
+                  <button class="bo-action-btn btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Deadpool & Wolverine')">
+                    Tickets &amp; Times
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Row 3 -->
+              <tr>
+                <td class="rank-cell top-3">03</td>
+                <td>
+                  <div class="movie-title-cell">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=100&q=75" alt="Gladiator II" class="bo-poster-mini">
+                    <div class="bo-info">
+                      <h4>Gladiator II</h4>
+                      <span>Paramount Pictures &bull; R</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="gross-cell">$55,500,000</td>
+                <td>$410,200,000</td>
+                <td>3,980</td>
+                <td><span class="trend-badge trend-new">🔥 New Release</span></td>
+                <td>
+                  <button class="bo-action-btn btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Gladiator II')">
+                    Tickets &amp; Times
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Row 4 -->
+              <tr>
+                <td class="rank-cell">04</td>
+                <td>
+                  <div class="movie-title-cell">
+                    <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=100&q=75" alt="Alien Romulus" class="bo-poster-mini">
+                    <div class="bo-info">
+                      <h4>Alien: Romulus</h4>
+                      <span>20th Century Studios &bull; R</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="gross-cell">$42,000,000</td>
+                <td>$350,700,000</td>
+                <td>3,888</td>
+                <td><span class="trend-badge trend-down">🔻 Week 3</span></td>
+                <td>
+                  <button class="bo-action-btn btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Alien: Romulus')">
+                    Tickets &amp; Times
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Row 5 -->
+              <tr>
+                <td class="rank-cell">05</td>
+                <td>
+                  <div class="movie-title-cell">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=100&q=75" alt="Interstellar 10th Anniversary" class="bo-poster-mini">
+                    <div class="bo-info">
+                      <h4>Interstellar (10th Anniversary IMAX)</h4>
+                      <span>Paramount / Warner Bros. &bull; PG-13</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="gross-cell">$18,400,000</td>
+                <td>$740,000,000</td>
+                <td>820</td>
+                <td><span class="trend-badge trend-new">🔥 Re-Release</span></td>
+                <td>
+                  <button class="bo-action-btn btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Interstellar')">
+                    Tickets &amp; Times
+                  </button>
+                </td>
+              </tr>
+
+              <!-- Row 6 -->
+              <tr>
+                <td class="rank-cell">06</td>
+                <td>
+                  <div class="movie-title-cell">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=100&q=75" alt="Wicked" class="bo-poster-mini">
+                    <div class="bo-info">
+                      <h4>Wicked</h4>
+                      <span>Universal Pictures &bull; PG</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="gross-cell">$15,900,000</td>
+                <td>$680,500,000</td>
+                <td>3,500</td>
+                <td><span class="trend-badge trend-down">🔻 Week 5</span></td>
+                <td>
+                  <button class="bo-action-btn btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Wicked')">
+                    Tickets &amp; Times
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         GENRE FILTERS & MOVIE DISCOVERY GRID
+         ============================================================================== */
+    -->
+    <section class="discovery-section" id="discovery">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-pretitle">Explore By Universe</span>
+            <h2 class="section-title">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="2">
+                <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                <polyline points="17 2 12 7 7 2"></polyline>
+              </svg>
+              Discover Movies &amp; Reviews
+            </h2>
+          </div>
+          <p class="section-subtitle">Click any poster to inspect critic scores or trigger 4K trailers</p>
+        </div>
+
+        <!-- Genre Pill Filters -->
+        <div class="genre-filter-bar" id="genre-filter-bar">
+          <button class="genre-pill-btn active" data-genre="all" onclick="filterGenre('all', this)">All Universes</button>
+          <button class="genre-pill-btn" data-genre="action" onclick="filterGenre('action', this)">Action &amp; Adventure</button>
+          <button class="genre-pill-btn" data-genre="scifi" onclick="filterGenre('scifi', this)">Sci-Fi &amp; Cyberpunk</button>
+          <button class="genre-pill-btn" data-genre="thriller" onclick="filterGenre('thriller', this)">Crime &amp; Thriller</button>
+          <button class="genre-pill-btn" data-genre="horror" onclick="filterGenre('horror', this)">Horror &amp; Gothic</button>
+          <button class="genre-pill-btn" data-genre="drama" onclick="filterGenre('drama', this)">Drama &amp; Prestige</button>
+          <button class="genre-pill-btn" data-genre="animation" onclick="filterGenre('animation', this)">Animation</button>
+        </div>
+
+        <!-- Movie Poster Grid (12 Items) -->
+        <div class="movie-grid" id="movie-grid">
+          
+          <!-- Card 1 -->
+          <article class="movie-card" data-genre="scifi action">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80" alt="Dune: Part Two" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">4K UHD</span>
+                <span class="badge-rating-imdb">★ 8.6</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('dune2')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Dune: Part Two')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">Dune: Part Two</h4>
+                <p class="movie-card-genres">Sci-Fi &bull; Adventure &bull; 2024</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Max</span>
+                  <span class="stream-pill-tag">Apple TV</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">🍅 92%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="movie-card" data-genre="drama">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=600&q=80" alt="Oppenheimer" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">IMAX 70mm</span>
+                <span class="badge-rating-imdb">★ 8.9</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('oppenheimer')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Oppenheimer')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">Oppenheimer</h4>
+                <p class="movie-card-genres">Biography &bull; Drama &bull; History</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Prime Video</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">🍅 93%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="movie-card" data-genre="action">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80" alt="Deadpool and Wolverine" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">Dolby Atmos</span>
+                <span class="badge-rating-imdb">★ 7.8</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('deadpool')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Deadpool & Wolverine')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">Deadpool &amp; Wolverine</h4>
+                <p class="movie-card-genres">Action &bull; Comedy &bull; Marvel</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Disney+</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">🍅 79%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="movie-card" data-genre="action drama">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=600&q=80" alt="Gladiator II" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">4K UHD</span>
+                <span class="badge-rating-imdb">★ 7.2</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('gladiator2')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Gladiator II')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">Gladiator II</h4>
+                <p class="movie-card-genres">Action &bull; Epic &bull; History</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Paramount+</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">🍅 84%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="movie-card" data-genre="scifi drama">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" alt="Interstellar" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">IMAX 15/70</span>
+                <span class="badge-rating-imdb">★ 8.7</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('interstellar')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Interstellar')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">Interstellar</h4>
+                <p class="movie-card-genres">Sci-Fi &bull; Adventure &bull; Christopher Nolan</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Paramount+</span>
+                  <span class="stream-pill-tag">Prime</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">🍅 98% Aud.</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="movie-card" data-genre="horror scifi">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80" alt="Alien Romulus" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">4K HDR</span>
+                <span class="badge-rating-imdb">★ 7.3</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('alien')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Alien: Romulus')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">Alien: Romulus</h4>
+                <p class="movie-card-genres">Horror &bull; Sci-Fi &bull; Fede Álvarez</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Hulu</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">🍅 80%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="movie-card" data-genre="thriller">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="The Batman Part II" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">Gotham Noir</span>
+                <span class="badge-rating-imdb">★ 8.0</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('batman')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('The Batman: Part II')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">The Batman: Part II</h4>
+                <p class="movie-card-genres">Crime &bull; Mystery &bull; Noir</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Max Original</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">Anticipated</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="movie-card" data-genre="horror">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80" alt="Nosferatu" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">4K UHD</span>
+                <span class="badge-rating-imdb">★ 8.1</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('nosferatu')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Nosferatu')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">Nosferatu</h4>
+                <p class="movie-card-genres">Gothic Horror &bull; Robert Eggers</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Focus Features</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">🍅 91%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 9 -->
+          <article class="movie-card" data-genre="animation action">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Spider-Man: Beyond the Spider-Verse" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">Multiverse</span>
+                <span class="badge-rating-imdb">★ 8.8</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('spiderverse')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Beyond the Spider-Verse')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">Beyond the Spider-Verse</h4>
+                <p class="movie-card-genres">Animation &bull; Action &bull; Sony</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Netflix</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">🍅 95%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 10 -->
+          <article class="movie-card" data-genre="action scifi">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=600&q=80" alt="Furiosa: A Mad Max Saga" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">4K HDR</span>
+                <span class="badge-rating-imdb">★ 7.6</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('furiosa')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Furiosa')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">Furiosa: Mad Max Saga</h4>
+                <p class="movie-card-genres">Action &bull; Post-Apocalyptic</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Max</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">🍅 90%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 11 -->
+          <article class="movie-card" data-genre="thriller drama">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=600&q=80" alt="Civil War" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">A24 Sound</span>
+                <span class="badge-rating-imdb">★ 7.1</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('civilwar')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Civil War')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">Civil War</h4>
+                <p class="movie-card-genres">Dystopian &bull; Action &bull; A24</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Max</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">🍅 81%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 12 -->
+          <article class="movie-card" data-genre="drama fantasy">
+            <div class="movie-poster-wrap">
+              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80" alt="Wicked" class="movie-poster-img">
+              <div class="card-top-badges">
+                <span class="badge-res">Dolby Vision</span>
+                <span class="badge-rating-imdb">★ 8.0</span>
+              </div>
+              <div class="card-quick-overlay">
+                <div class="card-overlay-btn-group">
+                  <button class="btn-overlay-watch btn-watch-trailer-4k direct-link-trigger" onclick="scrollToPlayerAndPlay('wicked')">
+                    ▶ Watch Trailer in 4K
+                  </button>
+                  <button class="btn-overlay-showtimes btn-check-showtimes direct-link-trigger" onclick="openShowtimesModal('Wicked')">
+                    🎟 Showtimes
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="movie-card-info">
+              <div>
+                <h4 class="movie-card-title">Wicked</h4>
+                <p class="movie-card-genres">Musical &bull; Fantasy &bull; Universal</p>
+              </div>
+              <div class="movie-card-footer">
+                <div class="stream-icons-mini">
+                  <span class="stream-pill-tag">Peacock</span>
+                </div>
+                <span style="color: var(--gold); font-size: 11px; font-weight: 700;">🍅 89%</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         CRITIC REVIEWS & REVIEW SIDEBAR WITH ZONE 3 BANNER
+         ============================================================================== -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-pretitle">The Verdict</span>
+            <h2 class="section-title">
+              <span style="color: var(--crimson);">✍️</span>
+              Verified Critic Reviews &amp; Editorial Analysis
+            </h2>
+          </div>
+          <p class="section-subtitle">Read unfiltered consensus from top film critics and award-winning festival reviewers</p>
+        </div>
+
+        <div class="reviews-layout">
+          <!-- Main Review Feed -->
+          <div class="review-cards-list">
+            
+            <!-- Review 1 -->
+            <article class="review-item-card">
+              <div class="review-card-head">
+                <div class="critic-author-box">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Helen O'Hara" class="critic-avatar">
+                  <div class="critic-meta">
+                    <h4>Helen O'Hara</h4>
+                    <span class="critic-pub">Empire Magazine &bull; Senior Critic</span>
+                  </div>
+                </div>
+                <div class="review-score-stars">
+                  ★★★★★ <strong style="color: #fff; margin-left: 6px;">5.0 / 5</strong>
+                </div>
+              </div>
+              <div class="review-movie-badge">
+                🎬 Review of: <strong>Dune: Part Two (2024)</strong>
+              </div>
+              <p class="review-quote">
+                "A monumental, thunderous achievement in modern science fiction filmmaking. Denis Villeneuve has mounted a sand-swept operatic masterwork that rivals Peter Jackson's Lord of the Rings trilogy in scale, philosophical gravity, and acoustic grandeur."
+              </p>
+              <div class="review-footer-row">
+                <span class="review-tag-consensus">✓ Certified Fresh • Top Critic Consensus</span>
+                <span>Published 3 days ago</span>
+              </div>
+            </article>
+
+            <!-- Review 2 -->
+            <article class="review-item-card">
+              <div class="review-card-head">
+                <div class="critic-author-box">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="David Rooney" class="critic-avatar">
+                  <div class="critic-meta">
+                    <h4>David Rooney</h4>
+                    <span class="critic-pub">The Hollywood Reporter &bull; Chief Film Critic</span>
+                  </div>
+                </div>
+                <div class="review-score-stars">
+                  ★★★★☆ <strong style="color: #fff; margin-left: 6px;">4.5 / 5</strong>
+                </div>
+              </div>
+              <div class="review-movie-badge">
+                🎬 Review of: <strong>Oppenheimer (2023)</strong>
+              </div>
+              <p class="review-quote">
+                "Nolan turns the moral collapse of atomic physics into a kinetic, pulse-pounding intellectual thriller. Cillian Murphy's hollow gaze carries the unimaginable weight of humanity's darkest invention with transcendent silence."
+              </p>
+              <div class="review-footer-row">
+                <span class="review-tag-consensus">✓ Academy Award Winner • Best Picture</span>
+                <span>Published 1 week ago</span>
+              </div>
+            </article>
+
+            <!-- Review 3 -->
+            <article class="review-item-card">
+              <div class="review-card-head">
+                <div class="critic-author-box">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Peter Travers" class="critic-avatar">
+                  <div class="critic-meta">
+                    <h4>Peter Travers</h4>
+                    <span class="critic-pub">Rolling Stone &bull; Contributing Editor</span>
+                  </div>
+                </div>
+                <div class="review-score-stars">
+                  ★★★★☆ <strong style="color: #fff; margin-left: 6px;">4.0 / 5</strong>
+                </div>
+              </div>
+              <div class="review-movie-badge">
+                🎬 Review of: <strong>Gladiator II (2024)</strong>
+              </div>
+              <p class="review-quote">
+                "Ridley Scott returns to Rome with furious, bloody vengeance. Paul Mescal delivers ferocious physical presence while Denzel Washington steals every single frame he inhabits with theatrical menace and Machiavellian wit."
+              </p>
+              <div class="review-footer-row">
+                <span class="review-tag-consensus">✓ Verified Audience Favorite</span>
+                <span>Published 5 days ago</span>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Review Sidebar with Ad Slot Zone 3 -->
+          <aside class="review-sidebar">
+            <!-- ZONE 3: SIDEBAR BANNER (300x250) -->
+            <div id="ad-zone-sidebar-300x250" class="ad-container-sidebar">
+              <!-- Rendered dynamically by ads-config.js (HilltopAds Zone 3) -->
+            </div>
+
+            <!-- Must-Watch Widget -->
+            <div class="sidebar-widget">
+              <h4 class="sidebar-widget-title">
+                <span>🔥</span> Editor's Top 5 Must-Watch
+              </h4>
+              <div class="must-watch-list">
+                <div class="must-watch-item">
+                  <span class="must-watch-num">1</span>
+                  <div class="must-watch-info">
+                    <h5>Dune: Part Two</h5>
+                    <span>Sci-Fi &bull; IMAX 70mm &bull; 92% RT</span>
+                  </div>
+                </div>
+                <div class="must-watch-item">
+                  <span class="must-watch-num">2</span>
+                  <div class="must-watch-info">
+                    <h5>Interstellar (10th Anniv.)</h5>
+                    <span>Sci-Fi Classic &bull; Christopher Nolan</span>
+                  </div>
+                </div>
+                <div class="must-watch-item">
+                  <span class="must-watch-num">3</span>
+                  <div class="must-watch-info">
+                    <h5>Nosferatu</h5>
+                    <span>Gothic Horror &bull; Robert Eggers</span>
+                  </div>
+                </div>
+                <div class="must-watch-item">
+                  <span class="must-watch-num">4</span>
+                  <div class="must-watch-info">
+                    <h5>Deadpool &amp; Wolverine</h5>
+                    <span>Action Comedy &bull; $1.3B Global</span>
+                  </div>
+                </div>
+                <div class="must-watch-item">
+                  <span class="must-watch-num">5</span>
+                  <div class="must-watch-info">
+                    <h5>Civil War</h5>
+                    <span>A24 Thriller &bull; Dolby Atmos</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cinema Pass Promo Box with Zone 5 SmartLink -->
+            <div class="sidebar-widget" style="background: linear-gradient(135deg, rgba(229,9,20,0.15), rgba(245,197,24,0.1)); border-color: var(--border-crimson);">
+              <h4 class="sidebar-widget-title" style="color: var(--gold);">
+                🎟 IMAX Unlimited Cinema Pass
+              </h4>
+              <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 14px; line-height: 1.5;">
+                Watch unlimited theatrical screenings, reserve recliner seats 14 days in advance, and enjoy 20% off concessions.
+              </p>
+              <button class="btn-primary-cine direct-link-trigger" style="width: 100%; justify-content: center; font-size: 13px; padding: 10px;" data-action="claim-imax-pass">
+                Claim Free 14-Day Trial &rarr;
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         STREAMING AVAILABILITY GUIDE ("WHERE TO WATCH")
+         ============================================================================== -->
+    <section class="streaming-guide-section" id="streaming">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-pretitle">Home Theater Directory</span>
+            <h2 class="section-title">
+              <span style="color: var(--cyan-accent);">📺</span>
+              Streaming Availability &amp; 4K HDR Guide
+            </h2>
+          </div>
+          <p class="section-subtitle">Real-time digital release dates, Dolby Vision audio availability, and platform streaming links</p>
+        </div>
+
+        <!-- Platform Pills Filter -->
+        <div class="streaming-platform-pills">
+          <button class="stream-filter-btn active" onclick="filterPlatform('all', this)">All Platforms</button>
+          <button class="stream-filter-btn" onclick="filterPlatform('netflix', this)">Netflix</button>
+          <button class="stream-filter-btn" onclick="filterPlatform('prime', this)">Amazon Prime Video</button>
+          <button class="stream-filter-btn" onclick="filterPlatform('max', this)">Max (HBO)</button>
+          <button class="stream-filter-btn" onclick="filterPlatform('disney', this)">Disney+</button>
+          <button class="stream-filter-btn" onclick="filterPlatform('apple', this)">Apple TV+</button>
+          <button class="stream-filter-btn" onclick="filterPlatform('paramount', this)">Paramount+</button>
+        </div>
+
+        <!-- Streaming Directory Cards -->
+        <div class="streaming-grid">
+          
+          <!-- Stream Card 1 -->
+          <div class="streaming-card" data-platform="max apple">
+            <div class="stream-card-header">
+              <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=150&q=80" alt="Dune 2 Stream" class="stream-card-poster">
+              <div class="stream-card-title">
+                <h4>Dune: Part Two</h4>
+                <p>Warner Bros. &bull; 2h 46m</p>
+                <div class="stream-quality-row">
+                  <span class="quality-tag">4K UHD</span>
+                  <span class="quality-tag">Dolby Vision</span>
+                  <span class="quality-tag">Dolby Atmos</span>
+                </div>
+              </div>
+            </div>
+            <div class="stream-options-list">
+              <div class="stream-provider-row">
+                <span class="provider-name">Max</span>
+                <span class="provider-type">Included in Subscription</span>
+              </div>
+              <div class="stream-provider-row">
+                <span class="provider-name">Apple TV</span>
+                <span class="provider-type">Rent $5.99 / Buy $19.99</span>
+              </div>
+            </div>
+            <!-- Zone 5 Direct Link CTA -->
+            <button class="btn-stream-cta btn-stream-4k direct-link-trigger" data-action="stream-dune2">
+              Stream in 4K UHD Now &rarr;
+            </button>
+          </div>
+
+          <!-- Stream Card 2 -->
+          <div class="streaming-card" data-platform="prime apple">
+            <div class="stream-card-header">
+              <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=150&q=80" alt="Oppenheimer Stream" class="stream-card-poster">
+              <div class="stream-card-title">
+                <h4>Oppenheimer</h4>
+                <p>Universal Pictures &bull; 3h 00m</p>
+                <div class="stream-quality-row">
+                  <span class="quality-tag">4K Ultra HD</span>
+                  <span class="quality-tag">HDR10+</span>
+                  <span class="quality-tag">DTS:X</span>
+                </div>
+              </div>
+            </div>
+            <div class="stream-options-list">
+              <div class="stream-provider-row">
+                <span class="provider-name">Prime Video</span>
+                <span class="provider-type">Included with Prime</span>
+              </div>
+              <div class="stream-provider-row">
+                <span class="provider-name">Apple TV</span>
+                <span class="provider-type">Rent $3.99 / Buy $14.99</span>
+              </div>
+            </div>
+            <button class="btn-stream-cta btn-stream-4k direct-link-trigger" data-action="stream-oppenheimer">
+              Stream in 4K UHD Now &rarr;
+            </button>
+          </div>
+
+          <!-- Stream Card 3 -->
+          <div class="streaming-card" data-platform="disney">
+            <div class="stream-card-header">
+              <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=150&q=80" alt="Deadpool and Wolverine Stream" class="stream-card-poster">
+              <div class="stream-card-title">
+                <h4>Deadpool &amp; Wolverine</h4>
+                <p>Marvel Studios &bull; 2h 08m</p>
+                <div class="stream-quality-row">
+                  <span class="quality-tag">IMAX Enhanced</span>
+                  <span class="quality-tag">Dolby Atmos</span>
+                </div>
+              </div>
+            </div>
+            <div class="stream-options-list">
+              <div class="stream-provider-row">
+                <span class="provider-name">Disney+</span>
+                <span class="provider-type">Included with Premium</span>
+              </div>
+            </div>
+            <button class="btn-stream-cta btn-stream-4k direct-link-trigger" data-action="stream-deadpool">
+              Stream in IMAX Enhanced &rarr;
+            </button>
+          </div>
+
+          <!-- Stream Card 4 -->
+          <div class="streaming-card" data-platform="paramount prime">
+            <div class="stream-card-header">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=150&q=80" alt="Interstellar Stream" class="stream-card-poster">
+              <div class="stream-card-title">
+                <h4>Interstellar</h4>
+                <p>Paramount Pictures &bull; 2h 49m</p>
+                <div class="stream-quality-row">
+                  <span class="quality-tag">4K UHD</span>
+                  <span class="quality-tag">HDR10</span>
+                  <span class="quality-tag">7.1 Surround</span>
+                </div>
+              </div>
+            </div>
+            <div class="stream-options-list">
+              <div class="stream-provider-row">
+                <span class="provider-name">Paramount+</span>
+                <span class="provider-type">Included with Showtime</span>
+              </div>
+              <div class="stream-provider-row">
+                <span class="provider-name">Prime Video</span>
+                <span class="provider-type">Rent $3.99</span>
+              </div>
+            </div>
+            <button class="btn-stream-cta btn-stream-4k direct-link-trigger" data-action="stream-interstellar">
+              Stream in 4K UHD Now &rarr;
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================================================
+       ZONE 2: IN-PAGE PUSH (IPP) MULTITAG NOTIFICATION CONTAINER
+       ============================================================================== -->
+  <aside class="ad-zone-ipp-container" id="ad-zone-inpage-push" aria-label="Cinema Alert Push Notification">
+    <!-- Rendered dynamically by ads-config.js (HilltopAds Zone 2) -->
+  </aside>
+
+  <!-- ==============================================================================
+       ZONE 4: VIDEO SLIDER MULTITAG DOCKED CONTAINER
+       ============================================================================== -->
+  <aside class="ad-zone-slider-container" id="ad-zone-video-slider" aria-label="Outstream Video Ad">
+    <!-- Rendered dynamically by ads-config.js (HilltopAds Zone 4) -->
+  </aside>
+
+  <!-- ==============================================================================
+       MODALS: SHOWTIMES, WATCHLIST & HILLTOPADS ZONE CONFIG
+       ============================================================================== -->
+  
+  <!-- Cinema Showtimes Modal -->
+  <div class="cine-modal-backdrop" id="showtimes-modal" role="dialog" aria-modal="true" aria-labelledby="showtimes-title">
+    <div class="cine-modal-window">
+      <div class="modal-header-bar">
+        <div class="modal-title-group">
+          <h3 id="showtimes-title">🎟 Cinema Showtimes &amp; Reserved Seating</h3>
+          <p id="showtimes-movie-sub">Select your theater format, city, and showtime to reserve seats</p>
+        </div>
+        <button class="modal-close-icon" onclick="closeShowtimesModal()" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body-content">
+        <div class="showtime-filter-selectors">
+          <div class="selector-control">
+            <label for="city-select">Select Metro Area:</label>
+            <select id="city-select">
+              <option value="nyc">New York City (Lincoln Square / AMC Empire)</option>
+              <option value="la">Los Angeles (TCL Chinese / Universal CityWalk)</option>
+              <option value="london">London (BFI IMAX / Leicester Square)</option>
+              <option value="chicago">Chicago (Navy Pier / Regal City North)</option>
+              <option value="toronto">Toronto (Scotiabank Theatre IMAX)</option>
+            </select>
+          </div>
+          <div class="selector-control">
+            <label for="format-select">Screen Format:</label>
+            <select id="format-select">
+              <option value="all">All Formats (IMAX 70mm, Dolby, Standard)</option>
+              <option value="imax70">IMAX 15/70mm Film Projection</option>
+              <option value="dolby">Dolby Cinema at AMC (Dolby Atmos)</option>
+              <option value="screenx">ScreenX 270-Degree Panoramic</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Theater 1 -->
+        <div class="theater-listing-card">
+          <div class="theater-name-row">
+            <div>
+              <h4 class="theater-name">AMC Lincoln Square 13 &bull; IMAX 70mm</h4>
+              <span style="font-size: 11px; color: var(--text-muted);">1998 Broadway, New York, NY &bull; 0.8 miles away</span>
+            </div>
+            <span class="theater-badge">IMAX 70MM FILM</span>
+          </div>
+          <div class="showtime-pills-row">
+            <!-- Zone 5 Direct Link button -->
+            <button class="showtime-pill-btn btn-check-showtimes direct-link-trigger" data-action="seat-1200pm">
+              12:00 PM
+              <span>IMAX 70mm</span>
+            </button>
+            <button class="showtime-pill-btn btn-check-showtimes direct-link-trigger" data-action="seat-330pm">
+              3:30 PM
+              <span>Laser 4K</span>
+            </button>
+            <button class="showtime-pill-btn btn-check-showtimes direct-link-trigger" data-action="seat-700pm">
+              7:00 PM
+              <span>IMAX 70mm</span>
+            </button>
+            <button class="showtime-pill-btn btn-check-showtimes direct-link-trigger" data-action="seat-1030pm">
+              10:30 PM
+              <span>IMAX 70mm</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Theater 2 -->
+        <div class="theater-listing-card">
+          <div class="theater-name-row">
+            <div>
+              <h4 class="theater-name">Regal Union Square &bull; Dolby Atmos RPX</h4>
+              <span style="font-size: 11px; color: var(--text-muted);">850 Broadway, New York, NY &bull; 1.4 miles away</span>
+            </div>
+            <span class="theater-badge" style="color: var(--cyan-accent); border-color: rgba(0,229,255,0.3); background: rgba(0,229,255,0.1);">DOLBY CINEMA</span>
+          </div>
+          <div class="showtime-pills-row">
+            <button class="showtime-pill-btn btn-check-showtimes direct-link-trigger" data-action="seat-115pm">
+              1:15 PM
+              <span>Dolby Vision</span>
+            </button>
+            <button class="showtime-pill-btn btn-check-showtimes direct-link-trigger" data-action="seat-445pm">
+              4:45 PM
+              <span>Dolby Atmos</span>
+            </button>
+            <button class="showtime-pill-btn btn-check-showtimes direct-link-trigger" data-action="seat-815pm">
+              8:15 PM
+              <span>Dolby Atmos</span>
+            </button>
+          </div>
+        </div>
+
+        <div style="background: rgba(245,197,24,0.08); border: 1px solid var(--border-gold); padding: 12px 16px; border-radius: 8px; font-size: 12px; color: var(--gold); display: flex; align-items: center; justify-content: space-between;">
+          <span>💡 Clicking any showtime routes via HilltopAds Zone 5 SmartLink to check real-time cinema inventory.</span>
+          <button class="direct-link-trigger btn-check-showtimes" style="font-weight: 800; text-decoration: underline; color: #fff;">Check All Theaters &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Watchlist Modal -->
+  <div class="cine-modal-backdrop" id="watchlist-modal" role="dialog" aria-modal="true">
+    <div class="cine-modal-window" style="max-width: 520px;">
+      <div class="modal-header-bar">
+        <div class="modal-title-group">
+          <h3>⭐ Your Cinema Watchlist</h3>
+          <p>Personalized movies saved for weekend viewing</p>
+        </div>
+        <button class="modal-close-icon" onclick="closeWatchlistModal()">&times;</button>
+      </div>
+      <div class="modal-body-content">
+        <div id="watchlist-items-list" style="display: flex; flex-direction: column; gap: 12px;">
+          <!-- Items inserted dynamically -->
+        </div>
+        <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center;">
+          <button class="btn-secondary-cine" onclick="clearWatchlist()" style="font-size: 12px; padding: 8px 16px;">Clear All</button>
+          <button class="btn-primary-cine btn-watch-trailer-4k direct-link-trigger" onclick="closeWatchlistModal()" style="font-size: 13px; padding: 10px 20px;">
+            Watch Trailers Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HilltopAds Publisher Zone Manager Modal -->
+  <div class="cine-modal-backdrop" id="cine-ads-modal" role="dialog" aria-modal="true" aria-labelledby="ads-modal-title">
+    <div class="cine-modal-window">
+      <div class="modal-header-bar">
+        <div class="modal-title-group">
+          <h3 id="ads-modal-title">
+            <span class="pulse-dot"></span> HilltopAds Monetization Architecture
+          </h3>
+          <p>Verify active zones, inspect tag integration, and test live ad events</p>
+        </div>
+        <button class="modal-close-icon" onclick="closeAdsConfigModal()">&times;</button>
+      </div>
+      <div class="modal-body-content">
+        <div style="background: rgba(229,9,20,0.1); border: 1px solid var(--border-crimson); padding: 12px 16px; border-radius: 8px; font-size: 12px; color: #ff858d; margin-bottom: 20px; line-height: 1.5;">
+          <strong>Publisher Guide:</strong> All 6 HilltopAds monetization ad zones are pre-wired. When ready for production, update your publisher Zone IDs in <code>ads-config.js</code> and flip <code>isDemoMode: false</code>.
+        </div>
+
+        <div class="ads-zone-config-list">
+          <!-- Zone 1 -->
+          <div class="config-zone-item">
+            <div class="config-zone-header">
+              <span class="config-zone-title">Zone 1: Popunder / OnClick</span>
+              <span class="config-zone-status">● Armed &amp; Active</span>
+            </div>
+            <p style="font-size: 11px; color: var(--text-secondary); margin-bottom: 8px;">
+              Opens a high-CPM advertiser window behind the browser upon first visitor click anywhere on the page.
+            </p>
+            <div class="config-input-group">
+              <input type="text" class="config-input" value="YOUR_POPUNDER_ZONE_ID" readonly>
+              <button class="config-btn-test" onclick="testPopunderTrigger()">Test Popunder</button>
+            </div>
+          </div>
+
+          <!-- Zone 2 -->
+          <div class="config-zone-item">
+            <div class="config-zone-header">
+              <span class="config-zone-title">Zone 2: In-Page Push (IPP) MultiTag</span>
+              <span class="config-zone-status">● Live Slot (#ad-zone-inpage-push)</span>
+            </div>
+            <p style="font-size: 11px; color: var(--text-secondary); margin-bottom: 8px;">
+              Native movie alerts formatted with posters and ticket CTA pills docked to viewport bottom-right.
+            </p>
+            <div class="config-input-group">
+              <input type="text" class="config-input" value="YOUR_IPP_ZONE_ID" readonly>
+              <button class="config-btn-test" onclick="testIppTrigger()">Trigger IPP Alert</button>
+            </div>
+          </div>
+
+          <!-- Zone 3 -->
+          <div class="config-zone-item">
+            <div class="config-zone-header">
+              <span class="config-zone-title">Zone 3: MultiTag Banners (728x90 &amp; 300x250)</span>
+              <span class="config-zone-status">● 2 Active Containers</span>
+            </div>
+            <p style="font-size: 11px; color: var(--text-secondary); margin-bottom: 8px;">
+              High-viewability leaderboard above the fold (728x90) and high-engagement review sidebar (300x250).
+            </p>
+            <div class="config-input-group">
+              <input type="text" class="config-input" value="YOUR_LEADERBOARD_BANNER_ZONE_ID" readonly>
+              <input type="text" class="config-input" value="YOUR_SIDEBAR_BANNER_ZONE_ID" readonly>
+            </div>
+          </div>
+
+          <!-- Zone 4 -->
+          <div class="config-zone-item">
+            <div class="config-zone-header">
+              <span class="config-zone-title">Zone 4: Video Slider MultiTag</span>
+              <span class="config-zone-status">● Docked Viewport Left</span>
+            </div>
+            <p style="font-size: 11px; color: var(--text-secondary); margin-bottom: 8px;">
+              High-impact outstream floating video format with minimize/close controls and smooth slide-in.
+            </p>
+            <div class="config-input-group">
+              <input type="text" class="config-input" value="YOUR_VIDEO_SLIDER_ZONE_ID" readonly>
+              <button class="config-btn-test" onclick="testVideoSliderTrigger()">Reopen Slider</button>
+            </div>
+          </div>
+
+          <!-- Zone 5 -->
+          <div class="config-zone-item">
+            <div class="config-zone-header">
+              <span class="config-zone-title">Zone 5: Direct Link / SmartLink</span>
+              <span class="config-zone-status">● Wired to 15+ Buttons</span>
+            </div>
+            <p style="font-size: 11px; color: var(--text-secondary); margin-bottom: 8px;">
+              Targeted monetized redirects on 'Watch Trailer in 4K', 'Check Cinema Showtimes', and 'Stream Now' CTAs.
+            </p>
+            <div class="config-input-group">
+              <input type="text" class="config-input" value="https://hilltopads.com/smartlink?zone=YOUR_SMARTLINK_ZONE_ID" readonly>
+              <button class="config-btn-test" onclick="testSmartLinkTrigger()">Test SmartLink</button>
+            </div>
+          </div>
+
+          <!-- Zone 6 -->
+          <div class="config-zone-item">
+            <div class="config-zone-header">
+              <span class="config-zone-title">Zone 6: Video VAST Linear Ad Tag</span>
+              <span class="config-zone-status">● Player Integrated</span>
+            </div>
+            <p style="font-size: 11px; color: var(--text-secondary); margin-bottom: 8px;">
+              Pre-roll &amp; mid-roll commercials with 5-second countdown timer, skip ad button, and sponsor overlay.
+            </p>
+            <div class="config-input-group">
+              <input type="text" class="config-input" value="YOUR_VAST_ZONE_ID" readonly>
+              <button class="config-btn-test" onclick="testVastTrigger()">Test VAST Pre-Roll</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================================================
+       FOOTER
+       ============================================================================== -->
+  <footer class="cine-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <a href="#hero" class="brand-logo">
+            <div class="logo-reel">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-main">CINE<span>PULSE</span></span>
+              <span class="logo-tagline">Trailers &bull; Reviews &bull; Guide</span>
+            </div>
+          </a>
+          <p class="footer-brand-bio">
+            CinePulse is your definitive cinematic portal for trending theatrical box office rankings, 4K HDR trailers, expert critic reviews, and real-time streaming guides.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Spotlight Premiere</a></li>
+            <li><a href="#trailers">4K Trailer Player</a></li>
+            <li><a href="#box-office">Box Office Top 10</a></li>
+            <li><a href="#discovery">Explore By Genre</a></li>
+            <li><a href="#reviews">Critic Reviews</a></li>
+            <li><a href="#streaming">Where to Watch</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Theaters &amp; Formats</h4>
+          <ul class="footer-links-list">
+            <li><a href="#box-office" class="btn-check-showtimes direct-link-trigger">IMAX 15/70mm Film</a></li>
+            <li><a href="#box-office" class="btn-check-showtimes direct-link-trigger">Dolby Cinema &amp; Atmos</a></li>
+            <li><a href="#box-office" class="btn-check-showtimes direct-link-trigger">ScreenX 270° Panoramic</a></li>
+            <li><a href="#streaming" class="btn-stream-4k direct-link-trigger">Apple TV 4K HDR</a></li>
+            <li><a href="#streaming" class="btn-stream-4k direct-link-trigger">Prime Video UHD</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Cinema Newsletter</h4>
+          <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">
+            Get weekly theatrical box office digests, secret screening alerts, and 4K trailer releases directly to your inbox.
+          </p>
+          <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+            <input type="email" class="newsletter-input" placeholder="Enter your email..." required>
+            <button type="submit" class="btn-newsletter">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-disclaimer">
+          &copy; 2026 CinePulse Entertainment Network. All movie posters, trailers, trademarks, and logos are property of their respective film studios and distributors (Warner Bros., Paramount, Universal, Marvel, Disney, A24).
+        </div>
+        <div style="display: flex; gap: 16px;">
+          <a href="#" onclick="openAdsConfigModal(); return false;" style="color: var(--gold);">HilltopAds Zones</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">DMCA</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================================================
+       CLIENT-SIDE INTERACTIVITY SCRIPTS
+       ============================================================================== -->
+  <script>
+    // Trailer Playlist Data
+    const TRAILER_DATA = {
+      dune2: {
+        title: "Dune: Part Two (Official 4K IMAX Trailer)",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+        poster: "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: Dolby Atmos 7.1 • Resolution: 3840x2160 UHD • Aspect: 1.90:1 IMAX"
+      },
+      gladiator2: {
+        title: "Gladiator II (Colosseum Teaser 4K)",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        poster: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: Dolby Atmos • Resolution: 4K Ultra HD • Aspect: 2.39:1 Anamorphic"
+      },
+      deadpool: {
+        title: "Deadpool & Wolverine (Red Band 4K Trailer)",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        poster: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: 7.1 Surround • Resolution: 4K HDR10 • Marvel Studios"
+      },
+      interstellar: {
+        title: "Interstellar (10th Anniversary 70mm IMAX Re-Release)",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+        poster: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: Uncompressed 12-Track IMAX • Aspect: 1.43:1 Full IMAX"
+      },
+      alien: {
+        title: "Alien: Romulus (Final Nightmare 4K Trailer)",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+        poster: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: Dolby Atmos • Resolution: 4K HDR • 20th Century Studios"
+      },
+      oppenheimer: {
+        title: "Oppenheimer (Official 4K Trailer)",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+        poster: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: 5.1 Surround • Format: 70mm IMAX • Universal Pictures"
+      },
+      batman: {
+        title: "The Batman: Part II (Teaser Showcase)",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        poster: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: Dolby Atmos • Noir Edition • Warner Bros."
+      },
+      nosferatu: {
+        title: "Nosferatu (Official Gothic Teaser)",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+        poster: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: Dolby Atmos • Focus Features"
+      },
+      spiderverse: {
+        title: "Spider-Man: Beyond the Spider-Verse",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        poster: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: Dolby Atmos • Sony Pictures Animation"
+      },
+      furiosa: {
+        title: "Furiosa: A Mad Max Saga (Official Trailer)",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        poster: "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: Dolby Atmos • Warner Bros."
+      },
+      civilwar: {
+        title: "Civil War (Official A24 4K Trailer)",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+        poster: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: Dolby Atmos • A24"
+      },
+      wicked: {
+        title: "Wicked (Official 4K Trailer)",
+        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+        poster: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+        meta: "Sound: Dolby Atmos • Universal Pictures"
+      }
+    };
+
+    // Watchlist State
+    let userWatchlist = [
+      { title: "Dune: Part Two", genre: "Sci-Fi / Adventure", score: "8.6" },
+      { title: "Gladiator II", genre: "Action / Epic", score: "7.2" },
+      { title: "Nosferatu", genre: "Gothic Horror", score: "8.1" }
+    ];
+
+    // Scroll to player and start trailer with VAST
+    function scrollToPlayerAndPlay(trailerKey) {
+      const playerSection = document.getElementById("trailers");
+      if (playerSection) {
+        playerSection.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      const trailer = TRAILER_DATA[trailerKey] || TRAILER_DATA.dune2;
+      const player = document.getElementById("cinepulse-trailer-player");
+      const videoSource = document.getElementById("video-source");
+      const titleEl = document.getElementById("player-active-title");
+      const playBtn = document.getElementById("trailer-play-trigger");
+
+      if (titleEl) titleEl.textContent = trailer.title;
+      if (player && videoSource) {
+        player.pause();
+        videoSource.src = trailer.videoUrl;
+        player.poster = trailer.poster;
+        player.load();
+
+        if (window.triggerCinePulseVastAd) {
+          window.triggerCinePulseVastAd(() => {
+            player.play().catch(e => console.log(e));
+            if (playBtn) playBtn.classList.add("playing");
+          });
+        } else {
+          player.play().catch(e => console.log(e));
+          if (playBtn) playBtn.classList.add("playing");
+        }
+      }
+    }
+
+    // Switch trailer from playlist
+    function switchTrailer(trailerKey, element) {
+      document.querySelectorAll(".playlist-item").forEach(item => item.classList.remove("active"));
+      if (element) element.classList.add("active");
+      scrollToPlayerAndPlay(trailerKey);
+    }
+
+    // Filter movie grid by genre
+    function filterGenre(genre, btn) {
+      document.querySelectorAll(".genre-pill-btn").forEach(b => b.classList.remove("active"));
+      if (btn) btn.classList.add("active");
+
+      const cards = document.querySelectorAll(".movie-card");
+      cards.forEach(card => {
+        const cardGenres = card.getAttribute("data-genre") || "";
+        if (genre === "all" || cardGenres.includes(genre)) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+
+    // Filter streaming cards by platform
+    function filterPlatform(platform, btn) {
+      document.querySelectorAll(".stream-filter-btn").forEach(b => b.classList.remove("active"));
+      if (btn) btn.classList.add("active");
+
+      const cards = document.querySelectorAll(".streaming-card");
+      cards.forEach(card => {
+        const p = card.getAttribute("data-platform") || "";
+        if (platform === "all" || p.includes(platform)) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+
+    // Instant Movie Search Filter
+    const searchInput = document.getElementById("movie-search-input");
+    if (searchInput) {
+      searchInput.addEventListener("input", (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        const cards = document.querySelectorAll(".movie-card");
+        cards.forEach(card => {
+          const title = card.querySelector(".movie-card-title")?.textContent.toLowerCase() || "";
+          const genres = card.querySelector(".movie-card-genres")?.textContent.toLowerCase() || "";
+          if (title.includes(query) || genres.includes(query)) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    }
+
+    // Showtimes Modal Handlers
+    function openShowtimesModal(movieTitle) {
+      const modal = document.getElementById("showtimes-modal");
+      const titleSub = document.getElementById("showtimes-movie-sub");
+      if (titleSub && movieTitle) {
+        titleSub.textContent = `Real-time cinema listings for "${movieTitle}" across major metro circuits`;
+      }
+      if (modal) modal.classList.add("modal-open");
+    }
+
+    function closeShowtimesModal() {
+      const modal = document.getElementById("showtimes-modal");
+      if (modal) modal.classList.remove("modal-open");
+    }
+
+    // Watchlist Handlers
+    function renderWatchlist() {
+      const listEl = document.getElementById("watchlist-items-list");
+      const countEl = document.getElementById("watchlist-count");
+      if (countEl) countEl.textContent = userWatchlist.length;
+
+      if (!listEl) return;
+      if (userWatchlist.length === 0) {
+        listEl.innerHTML = `<p style="font-size: 13px; color: var(--text-muted); text-align: center; padding: 20px 0;">Your watchlist is currently empty. Explore movies and click 'Add to Watchlist'!</p>`;
+        return;
+      }
+
+      listEl.innerHTML = userWatchlist.map((item, index) => `
+        <div style="background: var(--bg-surface); padding: 12px 16px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; border: 1px solid var(--border-subtle);">
+          <div>
+            <h5 style="color: #fff; font-size: 14px; font-weight: 700;">${item.title}</h5>
+            <span style="font-size: 11px; color: var(--text-muted);">${item.genre} &bull; ★ ${item.score}</span>
+          </div>
+          <button onclick="removeFromWatchlist(${index})" style="color: #ff5252; font-size: 16px;" title="Remove">&times;</button>
+        </div>
+      `).join("");
+    }
+
+    function addToWatchlist(title, genre, score) {
+      if (!userWatchlist.some(m => m.title === title)) {
+        userWatchlist.push({ title, genre, score });
+        renderWatchlist();
+        if (window.cinePulseAds) {
+          window.cinePulseAds.showToastNotification(
+            "Added to Watchlist",
+            `<strong>${title}</strong> has been saved to your cinema watchlist!`,
+            "info"
+          );
+        }
+      } else {
+        if (window.cinePulseAds) {
+          window.cinePulseAds.showToastNotification(
+            "Already in Watchlist",
+            `<strong>${title}</strong> is already in your watchlist.`,
+            "info"
+          );
+        }
+      }
+    }
+
+    function removeFromWatchlist(index) {
+      userWatchlist.splice(index, 1);
+      renderWatchlist();
+    }
+
+    function clearWatchlist() {
+      userWatchlist = [];
+      renderWatchlist();
+    }
+
+    document.getElementById("watchlist-open-btn")?.addEventListener("click", () => {
+      renderWatchlist();
+      document.getElementById("watchlist-modal")?.classList.add("modal-open");
+    });
+
+    function closeWatchlistModal() {
+      document.getElementById("watchlist-modal")?.classList.remove("modal-open");
+    }
+
+    // Newsletter handler
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const input = e.target.querySelector("input");
+      if (input && input.value) {
+        if (window.cinePulseAds) {
+          window.cinePulseAds.showToastNotification(
+            "Subscription Confirmed",
+            `Thank you! <strong>${input.value}</strong> is now subscribed to the CinePulse weekly newsletter.`,
+            "smartlink"
+          );
+        }
+        input.value = "";
+      }
+    }
+
+    // Header scroll background tint
+    window.addEventListener("scroll", () => {
+      const header = document.getElementById("cine-header");
+      if (header) {
+        if (window.scrollY > 40) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      }
+    });
+
+    // Test functions for Ads Config Modal
+    function testPopunderTrigger() {
+      if (window.cinePulseAds) {
+        window.cinePulseAds.showToastNotification(
+          "Zone 1: Popunder Trigger Test",
+          "Simulated Popunder firing. In production, this opens an advertiser tab behind your browser.",
+          "popunder"
+        );
+      }
+    }
+
+    function testIppTrigger() {
+      const container = document.getElementById("ad-zone-inpage-push");
+      if (container) {
+        container.classList.add("ipp-active");
+        if (window.cinePulseAds) {
+          window.cinePulseAds.showToastNotification(
+            "Zone 2: IPP Notification Test",
+            "In-Page Push card is now visible at the bottom-right corner.",
+            "info"
+          );
+        }
+      }
+    }
+
+    function testVideoSliderTrigger() {
+      const container = document.getElementById("ad-zone-video-slider");
+      if (container) {
+        container.classList.add("slider-open");
+        container.classList.remove("slider-collapsed");
+        if (window.cinePulseAds) {
+          window.cinePulseAds.showToastNotification(
+            "Zone 4: Video Slider Test",
+            "Outstream Video Slider unit docked in the bottom viewport.",
+            "info"
+          );
+        }
+      }
+    }
+
+    function testSmartLinkTrigger() {
+      if (window.cinePulseAds) {
+        window.cinePulseAds.showToastNotification(
+          "Zone 5: SmartLink Test",
+          "Direct Link tested successfully! In production, routes traffic via HilltopAds SmartLink.",
+          "smartlink"
+        );
+      }
+    }
+
+    function testVastTrigger() {
+      closeAdsConfigModal();
+      scrollToPlayerAndPlay('dune2');
+    }
+
+    // Close modals when clicking backdrop
+    window.addEventListener("click", (e) => {
+      if (e.target.classList.contains("cine-modal-backdrop")) {
+        e.target.classList.remove("modal-open");
+      }
+    });
+
+    // Initial render
+    renderWatchlist();
+  </script>
+</body>
+</html>
