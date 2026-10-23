@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ==============================================================================
  * CinePulse - HilltopAds Monetization Configuration & Integration Script
  * ==============================================================================
@@ -50,11 +50,11 @@ const CINEPULSE_ADS_CONFIG = {
     scriptUrl: "https://example-hilltopads-cdn.com/ipp-multitag.js",
     position: "bottom-right",
     displayDelayMs: 3200,
-    demoTitle: "🎟 Flash Deal: 2-for-1 IMAX 70mm Passes",
+    demoTitle: "ðŸŽŸ Flash Deal: 2-for-1 IMAX 70mm Passes",
     demoMessage: "Limited weekend cinema pass for Dune: Part Two & Gladiator II screenings in Dolby Atmos.",
-    demoIcon: "🍿",
+    demoIcon: "ðŸ¿",
     demoTime: "Just now",
-    demoCtaText: "Claim Tickets →"
+    demoCtaText: "Claim Tickets â†’"
   },
 
   // ----------------------------------------------------------------------------
@@ -120,13 +120,13 @@ const CINEPULSE_ADS_CONFIG = {
   // ----------------------------------------------------------------------------
   zone6_videoVAST: {
     enabled: true,
-    vastTagUrl: "https://example-hilltopads-vast.com/vast.xml?zone=YOUR_VAST_ZONE_ID", // Replace with HilltopAds VAST XML Tag
+    vastTagUrl: "https://faithfuloccasion.com/dumgF/z.d/GKNwvtZtG/UC/ge/mQ9KuHZBU-lwkjP/T_ce1QNsD/Qs5vMVD/UntRNDznUJ0xNnDtkPwBOgQe", // Replace with HilltopAds VAST XML Tag
     videoPlayerId: "cinepulse-trailer-player",
     adOverlayId: "vast-ad-overlay",
     skipTimeSeconds: 5,
     adDurationSeconds: 15,
     sponsorName: "MaxStream 4K Ultra Theater Pass",
-    sponsorBadge: "ADVERTISEMENT • VAST 4.0 TAG"
+    sponsorBadge: "ADVERTISEMENT â€¢ VAST 4.0 TAG"
   }
 };
 
@@ -396,7 +396,7 @@ class HilltopAdsCinemaManager {
                 <div class="slider-reel-anim">
                   <div class="reel-circle"></div>
                   <div class="reel-glow"></div>
-                  <span class="reel-play-symbol">▶</span>
+                  <span class="reel-play-symbol">â–¶</span>
                 </div>
                 <div class="slider-text-overlay">
                   <span class="slider-sponsor-tag">${cfg.demoTag}</span>
@@ -643,10 +643,10 @@ class HilltopAdsCinemaManager {
     const toast = document.createElement("div");
     toast.className = `cine-toast toast-category-${category}`;
 
-    let icon = "⚡";
-    if (category === "popunder") icon = "🚀";
-    if (category === "smartlink") icon = "🔗";
-    if (category === "vast") icon = "🎬";
+    let icon = "âš¡";
+    if (category === "popunder") icon = "ðŸš€";
+    if (category === "smartlink") icon = "ðŸ”—";
+    if (category === "vast") icon = "ðŸŽ¬";
 
     toast.innerHTML = `
       <div class="toast-head">
@@ -681,3 +681,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.cinePulseAds = new HilltopAdsCinemaManager(CINEPULSE_ADS_CONFIG);
   window.cinePulseAds.init();
 });
+
